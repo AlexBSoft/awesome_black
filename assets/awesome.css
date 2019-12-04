@@ -1,0 +1,139 @@
+/*
+
+    awesome.css
+
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Open+Sans&display=swap&subset=cyrillic');
+
+
+/*
+
+Project Variables
+
+*/
+:root {
+  --core-color: #3BDAA0;
+  --subcore-color:#dcb100;
+  --main-color: #fc0;
+  --red-color:  #FF6C6C;
+  --green-color: #5dc27a;
+}
+
+
+body {
+    background: #111;
+    color: #eee;
+}
+.fullscreen{
+    height: 100vh;
+}
+.firstscreen{
+    padding-top: 12vh;
+}
+.firstscreen h1{
+    font-size: 4em;
+    padding-bottom: 1em;
+}
+.firstscreen h3{
+    padding-bottom: 1em;
+}
+.firstscreen h4{
+    color: var(--red-color);
+    margin: 14px;
+}
+@media screen and (max-width:1000px) {
+    .firstscreen{
+        padding-top: 6vh;
+    }
+    .firstscreen h1{
+        font-size: 3em;
+    }
+}
+/*
+
+SVG mouse
+
+*/
+@keyframes scroll {
+	0% {
+		transform: translateY(0);
+	}
+	30% {
+		transform: translateY(60px);
+	}
+}
+svg #wheel {
+	animation: scroll ease 2s infinite;
+}
+.mouse{
+    display: block;
+    margin: auto;
+}
+.scrolling-svg{
+    position: absolute;
+    top: 88vh;
+   left: 51%;
+  margin-left: -50px;
+}
+
+
+
+.block{
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+}
+
+/*
+
+3D CARDS
+
+*/
+.card3d{
+    padding: 5%;
+    border-radius: 10px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    transition: 1s all;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: rotateX(23deg) rotateZ(-9deg) rotateY(15deg) scale3d(1, 1, -0.9);
+    box-shadow: -5px 10px 20px #444;
+}
+.card3d:hover {
+    box-shadow: -15px 12px 22px #444;
+    transform: translateY(-10px) translateX(1px) rotateX(23deg) rotateZ(-9deg) rotateY(15deg) scale3d(1, 1, -0.9);
+}
+
+.card-gradient-1{
+    background: linear-gradient(63deg, #36D1DC 0%, #5B86E5 100%);
+}
+.card-gradient-2{
+    background: linear-gradient(54deg, #4e54c8 0%, #8f94fb 100%);
+}
+.card-gradient-3{
+    background: linear-gradient(63deg, #141E30 0%, #243B55 100%);
+}
+.card-gradient-4{
+    background: linear-gradient(63deg, #16222A 0%, #3A6073 100%);
+}
+.card-gradient-5{
+    background: linear-gradient(63deg, #C04848 0%, #480048 100%);
+}
+.card-gradient-6{
+    background: linear-gradient(22deg, #c31432 0%, #240b36 100%);
+}
+
+a{
+    text-decoration: none;
+    color: #eee;
+}
+a:hover{
+    text-decoration: none;
+    color: #eee;
+}
