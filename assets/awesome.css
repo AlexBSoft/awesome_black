@@ -84,6 +84,17 @@ svg #wheel {
     margin-top: 30vh;
     margin-bottom: 30vh;
 }
+/*
+
+Section Titles
+
+*/
+.secondary-title{
+    padding-bottom: 2em;
+}
+.secondary-title h2{
+    font-size: 2.8em;
+}
 
 /*
 
@@ -128,6 +139,59 @@ svg #wheel {
 .card-gradient-6{
     background: linear-gradient(22deg, #c31432 0%, #240b36 100%);
 }
+
+/*
+
+FEATURES
+
+*/
+.features-icons{
+    text-align: center!important;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.features-icons-icon i{
+    font-size:5rem
+}
+.features-icons .features-icons-item .features-icons-icon {
+  
+    height: 7rem;
+}
+
+/*
+
+PROJECTS SECTION
+
+*/
+@media screen and (min-width: 992px){
+    .projects-section .featured-text {
+        padding: 0 0 0 2rem;
+        border-left: .5rem solid var(--red-color);
+    }
+    .projects-section .project-text {
+        padding: 5rem;
+    }
+    .projects-section .project-text hr {
+        border-color: var(--red-color);
+        border-width: .25rem;
+        width: 30%;
+    }
+}
+.projects-section .project-text {
+    padding: 3rem;
+    font-size: 90%;
+}
+
+/*
+
+FOOTER
+
+*/
+footer.footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
 
 a{
     text-decoration: none;
